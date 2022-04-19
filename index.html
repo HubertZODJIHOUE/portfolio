@@ -13,8 +13,23 @@
     <!-- font awesome icons -->
     <link rel="stylesheet" href="./css/all.min.css">
 
-    <!-- linckage fichier css -->
-    <link rel="stylesheet" href="./css/style.css">
+
+
+<!--  Magnific Popup css file  -->
+<link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+
+<!--  Owl-carousel css file  -->
+<link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+
+<!--  custom css file  -->
+<link rel="stylesheet" href="./css/style.css">
+
+<!--  Responsive css file  -->
+<link rel="stylesheet" href="./css/responsive.css">
+
 
 </head>
 
@@ -27,7 +42,7 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="./img/logo1.png" alt="logo" style="height: 70;"></a>
+                <a class="navbar-brand" href="#"><img src="./img/lg_normal.png" alt="logo" ></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,20 +50,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mr-auto"></div>
                     <ul class="navbar-nav">
+
+                       
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Descriptions <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projets</a>
+                            <a class="nav-link" href="#mes-realisation">Projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Compétences</a>
+                            <a class="nav-link" href="#competence">Compétences</a>
                         </li>
+                      
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Experiences</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
+                            <a class="nav-link" href="#contact">Contacts</a>
                         </li>
 
                     </ul>
@@ -60,18 +75,18 @@
     <!--  ======================= End Header Area ============================== -->
 
     <!--  ======================= Start Main Area ================================ -->
-    <main class="site-main">
+    <main class="site-main" style="background-color: rgb(227, 237, 245);;">
 
 
         <!--  ========================= About Area ==========================  -->
 
-        <section class="about-area">
+        <section class="about-area" style="background-color: rgb(227, 237, 245)">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="about-image">
-                            <img src="./img/IMG_2028(1).jpg" alt="About us" class="img-fluid"
-                                style="border-radius: 100%; height: 670px ; width: 580px;">
+                            <img src="./img/image_principal.jpg" alt="About us" class="img-fluid"
+                                style="border-radius: 100%; ">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
@@ -109,8 +124,8 @@
 
         <!--  ==========================Competence================================ -->
 
-        <section class="brand-area">
-            <h2 class="text-uppercase h4 font-roboto">COMPETENCE TECHNOLOGIQUE ET OUTILS DE DEVELOPPEMENT</h2>
+        <section class="brand-area" id ="competence" style="background-color: rgb(227, 237, 245);">
+            <h2 class="text-uppercase h4 font-roboto" >COMPETENCE TECHNOLOGIQUE ET OUTILS DE DEVELOPPEMENT</h2>
             <div class="container-fluid">
                 <div class="row">
 
@@ -183,30 +198,30 @@
 
         <!-- ================================Mes realisation======================= -->
 
-        <section class="project-area">
+        <section class="project-area" id="mes-realisation " style="background-color: rgb(231, 239, 247);">
             <div class="container">
                 <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1">Recently Done Project</h1>
-                    <h1 class="text-uppercase title-h1">Quality Work</h1>
+                    <h1 class="text-uppercase title-h1">MES PROJETS</h1>
+                   
                 </div>
 
                 <div class="button-group">
                     <button type="button" class="active" id="btn1" data-filter="*">All</button>
-                    <button type="button" data-filter=".popular">FULL STACK</button>
-                    <button type="button" data-filter=".latest">FRONT END</button>
-                    <button type="button" data-filter=".following">BACK END</button>
-                    <button type="button" data-filter=".upcoming">EN COURS DE REALISATION</button>
+                    <button type="button" data-filter=".full-stack">FULL STACK</button>
+                    <button type="button" data-filter=".front-end">FRONT END</button>
+                    <button type="button" data-filter=".back-end">BACK END</button>
+                    <!-- <button type="button" data-filter=".encours">EN COURS DE REALISATION</button> -->
                 </div>
 
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item front-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/reversi_game.png">
                                     <img src="./img/reversi_game.png" alt="portfolio-1" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title">
                                 <h4 class="text-uppercase">Reversi Game</h4>
                                 <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
                                         plus</span></a>
@@ -214,114 +229,114 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item back-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/vepick.png">
                                     <img src="./img/vepick.png" alt="portfolio-2" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title ">
                                 <h4 class="text-uppercase"> Location de velo Vepick</h4>
                                 <a href="https://github.com/mrsolarius/VePick.git"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item full-stack">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/cinema.png">
                                     <img src="./img/cinema.png" alt="portfolio-3" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title ">
                                 <h4 class="text-uppercase">GESTION DE CINEMA</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/Cinema"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item full-stack">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/employer.png">
                                     <img src="./img/employer.png" alt="portfolio-4" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title">
                                 <h4 class="text-uppercase">LES EMPLOYERS</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/Customers"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item back-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/spring crud.jpg">
                                     <img src="./img/spring crud.jpg" alt="portfolio-5" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title ">
                                 <h4 class="text-uppercase">API CRUD AVEC SPRING BOOT</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/STUDENT_API"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item front-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/portfolio.jpg">
                                     <img src="./img/portfolio.jpg" alt="portfolio-6" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title">
                                 <h4 class="text-uppercase">PORTFOLIO</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/portfolio/tree/main"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item back-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/tux.jpg">
                                     <img src="./img/tux.jpg" alt="portfolio-7" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title ">
                                 <h4 class="text-uppercase">TUX LETTER GAME</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/projetTuxZodjihokMoussolna"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item following">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item back-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/spring_jpa.png">
                                     <img src="./img/spring_jpa.png" alt="portfolio-8" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title ">
                                 <h4 class="text-uppercase">MAPPing ET PERSISTENCE BD</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/mapping"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item front-end">
                         <div class="our-project">
                             <div class="img">
                                 <a class="test-popup-link" href="./img/HUBERT.png">
                                     <img src="./img/HUBERT.png" alt="portfolio-9" class="img-fluid">
                                 </a>
                             </div>
-                            <div class="title py-4">
+                            <div class="title ">
                                 <h4 class="text-uppercase">PIXI GROUP</h4>
-                                <a href="https://github.com/l3miage-zodjihok"><span class="text-secondary">En savoir
+                                <a href="https://github.com/l3miage-zodjihok/PYXIS"><span class="text-secondary">En savoir
                                         plus</span></a>
                             </div>
                         </div>
@@ -333,28 +348,27 @@
 
         <!-- ================================fin Mes realisation======================= -->
 
-        <footer class="footer-area">
+        <footer class="footer-area" id="contact" style="background-color:#969bc4; height: 120;">
             <div class="container">
                 <div class="">
-                    <div class="site-logo text-center py-4">
-                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="social text-center">
-                        <h5 class="text-uppercase">Follow me</h5>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-light fa-envelope"></i></a>
+  
+                    <div class="social text-center " style="margin-top: 40px;">
+                        <a href="https://www.linkedin.com/in/hubert-zodjihoue-747557128/" style="padding-right:4%; margin-top: 40px;"><img src="./img/linkedin(1)(1).png" alt="linkedin"></a>
+                        <a href="https://github.com/l3miage-zodjihok" style="padding-right:4%;"><img src="./img/github(1).png" alt="github"></a>
+                        <a href="mailto:zodjihoue@outlook.fr"><img src="./img/email(1).png" alt="email"></a>
                         
                     </div>
                     <div class="copyrights text-center">
-                        <p class="para">
-                            Copyright ©2022 All rights reserved | This template is made with by
-                            <a href="#"><span style="color: var(--primary-color);">Daily Tuition</span></a>
+                    <p class="para " style="color: black;">
+                            Copyright ©2022 All rights reserved | a part of this realization is related to
+                            <a href="https://www.youtube.com/c/DailyTuition/playlists"><span style="color: black;">Daily Tuition</span></a>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
+
+
 
 
 

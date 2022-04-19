@@ -11,6 +11,27 @@
 
 
 /* start navigation */
+.header_area{
+       
+        position: fixed;
+      
+        position: fixed;
+        width: 100%;
+     
+        top: -1px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        box-shadow: var(--box-shadow);
+        z-index: 999;
+        transition: background 1s ease;
+       
+    
+}
+.header_area .main-menu{
+    position:relative;
+    margin-top: 0%;
+}
 
 .header_area .main-menu .navbar .navbar-brand {
     padding: 0 2rem 0 5rem;
@@ -155,16 +176,42 @@
     text-transform: uppercase;
 }
 
+/* espacement entre les buttons */
+
 .site-main .project-area .button-group button+button {
     padding-left: 3rem;
 }
+ /* les titre en dessous de chaque projet */
+/* .site-main .project-area .grid .our-project>.title h4 {
+    font: normal 700 19px/9px var(--roboto);
+} */
 
-.site-main .project-area .grid .our-project>.title h4 {
-    font: normal 700 25px/12px var(--roboto);
-}
 
 .site-main .project-area .grid .our-project .img a:hover img {
     filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.site-main .project-area .grid .our-project .img a{
+    display: flex;
+    justify-content :center;
+}
+
+.site-main .project-area .grid .our-project .img {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    /* padding: 1.8rem 0rem; */
+    margin: 3rem 0;
+    /* height: 300px; */
+    
+}
+
+.site-main .project-area .grid .our-project .img >a{
+   height: 220;
+
+}
+.site-main .footer-area .container>a{
+    height: 50px;
+    width: 50px;
 }
 
 
