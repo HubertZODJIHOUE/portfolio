@@ -1,0 +1,171 @@
+/*import fronts from fronts.css file*/
+@import url(./fonts.css);
+
+/*start navigation*/
+
+/* css variables */
+@import url(../partials/_variables.css);
+
+/* import global styling */
+@import url(../partials/_global.css);
+
+
+/* start navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 20rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    /* font: normal 500 15px/2px var(--roboto); */
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */
+
+
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+ .site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 30px/ 50px var(--roboto); 
+    letter-spacing: 4px;
+} 
+
+.site-main .about-area .about-title .paragraph>p {
+    padding: .4rem 0;
+}
+
+/* End About Area */
+
+/* =====================================pour les bouttons============================ */
+.button {
+    padding: .8rem 2.2rem;
+    /* font: normal 500 16px/20px var(--roboto); */
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+/*================================ fin button====================================== */
+
+
+/* ==============================experience =========================================*/
+
+.site-main .brand-area {
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand>img {
+    width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover>img {
+    filter: brightness(-2);
+} 
+
+ .site-main .brand-area .experience-area {
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span {
+    display: block;
+}
+
+.site-main .brand-area .experience-area .years-area {
+    /* background: url(../img/client-info-bg.png) no-repeat 45px 20px; */
+    padding: 2rem 0;
+    width: 50rem;
+    height: 25rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+/*  ==============================end experience =========================*/
+
+
+/* mes realisations*/
+
+.site-main .project-area {
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button {
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button+button {
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project>.title h4 {
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+/* fin mes realisations */
